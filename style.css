@@ -66,9 +66,18 @@ li + li {
 }
 
 article:nth-child(n + 2) {
-  border-top: 3px solid steelblue;
+  border-top: 2px solid steelblue;
 }
 
 header p::after {
   content: " 😃";
+}
+
+h3 {
+  _border: 1px solid salmon;
+  display: inline;
+}
+
+.dates {
+  display: inline;
 }
