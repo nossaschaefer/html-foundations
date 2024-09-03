@@ -8,6 +8,19 @@ body {
 
 html {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 10px;
+}
+
+@media screen and (min-width: 786px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 786px) {
+  main {
+    padding: 300px;
+  }
 }
 
 h1,
@@ -21,28 +34,29 @@ h3 {
 
 header,
 main {
-  padding: 16px;
+  padding: 1.6rem;
 }
 
 header {
   text-align: center;
   background-color: lightskyblue;
-  padding: 16px;
-  padding-top: 110px;
+  padding: 1.6rem;
+  padding-top: 11rem;
 }
 
 .main {
-  max-width: 800px;
+  max-width: 80rem;
   margin: 0 auto;
 }
 
 article {
-  padding: 20px;
-  margin-inline: 600px;
+  padding: 2rem;
+  margin-inline: 6rem;
 }
 
 header > a {
-  padding: 15px;
+  padding: 1.5rem;
+  font-size: 1.2rem;
 }
 
 a {
@@ -58,7 +72,7 @@ a:active {
 }
 
 li + li {
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 
 ::selection {
@@ -67,7 +81,7 @@ li + li {
 }
 
 article:nth-child(n + 2) {
-  border-top: 2px solid steelblue;
+  border-top: 0.2rem solid steelblue;
 }
 
 #subheader::after {
@@ -75,7 +89,7 @@ article:nth-child(n + 2) {
 }
 
 h3 {
-  _border: 1px solid salmon;
+  _border: 0.1rem solid salmon;
   display: inline;
 }
 
@@ -85,14 +99,36 @@ h3 {
 
 h2 {
   position: relative;
-  left: -20px;
+  left: -2rem;
 }
 
 #badge {
   position: absolute;
   top: 0%;
-  right: 15px;
+  right: 1.5rem;
   background-color: hotpink;
-  padding: 5px;
-  border-radius: 5px;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+div {
+  font-size: 3rem;
+}
+
+div > h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+div > p {
+  font-size: 0.5em;
+}
+
+main {
+  max-width: 300ch;
+  font-size: 1.2rem;
+}
+
+aside {
+  font-size: 1.5rem;
 }
