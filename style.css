@@ -28,6 +28,7 @@ header {
   text-align: center;
   background-color: lightskyblue;
   padding: 16px;
+  padding-top: 110px;
 }
 
 .main {
@@ -69,7 +70,7 @@ article:nth-child(n + 2) {
   border-top: 2px solid steelblue;
 }
 
-header p::after {
+#subheader::after {
   content: " 😃";
 }
 
@@ -80,4 +81,18 @@ h3 {
 
 .dates {
   display: inline;
+}
+
+h2 {
+  position: relative;
+  left: -20px;
+}
+
+#badge {
+  position: absolute;
+  top: 0%;
+  right: 15px;
+  background-color: hotpink;
+  padding: 5px;
+  border-radius: 5px;
 }
