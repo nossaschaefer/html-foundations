@@ -47,6 +47,19 @@ header > a {
   font-size: 1.2rem;
 }
 
+#badge {
+  transition: transform 1s;
+}
+
+header:hover #badge {
+  transform: scale(1.5);
+  transform-origin: right top;
+}
+
+header:focus-within #badge {
+  transform: scale(1.5);
+}
+
 @media screen and (min-width: 786px) {
   .nav-link {
     padding: 1rem;
