@@ -20,6 +20,19 @@ html {
   background-image: linear-gradient(270deg, snow, var(--main-color));
 }
 
+.main-header div {
+  font-size: 3rem;
+}
+
+.main-header div > h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+.main-header div > p {
+  font-size: 0.5em;
+}
+
 nav {
   display: flex;
   flex-direction: column;
@@ -59,6 +72,8 @@ header:hover #badge {
 header:focus-within #badge {
   transform: scale(1.5);
 }
+
+/* medium-breakpoint 786px */
 
 @media screen and (min-width: 786px) {
   .nav-link {
@@ -106,10 +121,10 @@ h3 {
   font-style: normal;
 }
 
-.main {
+/* .main {
   max-width: 80rem;
   margin: 0 auto;
-}
+} */
 
 article {
   padding: 2rem;
@@ -161,6 +176,7 @@ h3 {
 h2 {
   position: relative;
   left: -2rem;
+  margin-top: -0.5rem;
 }
 
 #badge {
@@ -172,17 +188,8 @@ h2 {
   border-radius: 0.5rem;
 }
 
-div {
-  font-size: 3rem;
-}
-
-div > h1 {
-  font-size: 2em;
-  margin: 0;
-}
-
-div > p {
-  font-size: 0.5em;
+aside {
+  font-size: 1.5rem;
 }
 
 main {
@@ -190,8 +197,15 @@ main {
   font-size: 1.4rem;
 }
 
-aside {
-  font-size: 1.5rem;
+@media screen and (min-width: 786px) {
+  .main-article {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .main-article-content {
+    padding-top: 3rem;
+  }
 }
 
 /* Experiences
